@@ -111,6 +111,13 @@ export class UserService {
 
       return updatedUser;
     } catch (error: any) {
+      if (
+        error instanceof UnauthorizedException ||
+        error instanceof NotFoundException
+      ) {
+        throw error;
+      }
+
       if (error.code === '23505') {
         throw new ConflictException('Username is already taken');
       }

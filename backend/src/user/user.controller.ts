@@ -5,6 +5,7 @@ import {
   Body,
   Param,
   BadRequestException,
+  HttpCode,
 } from '@nestjs/common';
 import { UserService } from './user.service';
 import { CreateUserDto } from './dto/create-user.dto';
@@ -63,6 +64,7 @@ export class UserController {
    * Changes a user's username after verifying the signature.
    */
   @Post('change-username')
+  @HttpCode(200)
   async changeUsername(
     @Body()
     body: {
