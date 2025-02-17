@@ -137,6 +137,11 @@ export class WalletService {
         throw new Error('User not found!');
       }
 
+      // if user inputs their username, throw error
+      if (user.walletAddress === nftTransferDto.fromAddress) {
+        throw new Error('Can not send NFT to your username!');
+      }
+
       // Create an Interface instance from the ABI.
       const iface = new Interface(abi);
 
