@@ -1,8 +1,3 @@
-// File: src/wallet/wallet.service.spec.ts
-// This file contains unit tests for the WalletService.
-// We mock the dependencies, including the ChallengeRepository, UserRepository, and AppConfigService,
-// so that the service can be tested in isolation.
-
 import { Test, TestingModule } from '@nestjs/testing';
 import { WalletService } from './wallet.service';
 import { Repository } from 'typeorm';

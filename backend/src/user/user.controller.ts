@@ -52,7 +52,7 @@ export class UserController {
       throw new BadRequestException('Wallet address is required');
     }
 
-    const nonce = crypto.randomUUID(); // More secure nonce generation
+    const nonce = crypto.randomUUID();
     await this.walletService.saveUsernameChallenge(walletAddress, nonce);
 
     return {
