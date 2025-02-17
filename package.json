@@ -1,0 +1,11 @@
+{
+  "name": "crypto_wallet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd backend && npm run start:dev\" \"cd frontend && npm run dev\""
+  },
+  "author": "",
+  "license": "ISC"
+}
