@@ -4,7 +4,7 @@ export const dataSourceOptions: DataSourceOptions = {
   type: 'postgres',
   synchronize: false,
   url: process.env.DATABASE_URL,
-  entities: ['dist/**/*.entity.js'],
+  entities: ['dist/**/*.schema.js'],
   migrations: ['dist/db/migrations/*.js'],
   logging: false,
   ssl: process.env.NODE_ENV === 'production',
