@@ -74,7 +74,7 @@ export const Header = (): ReactElement => {
               } text-white capitalize`}
             >
               Username:
-              {!user?.username || (
+              {user?.username || (
                 <span className="ml-2 text-gray-500">Add Username</span>
               )}
             </p>
