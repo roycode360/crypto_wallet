@@ -58,13 +58,17 @@ The projects are designed to work together seamlessly, with a top-level configur
 
 2.  **Install Frontend Dependencies:**
 
+    ```bash
     cd frontend
     npm install
+    ```
 
 3.  **Install Backend Dependencies:**
 
+    ```bash
     cd backend
     npm install
+    ```
 
 ---
 
@@ -73,13 +77,17 @@ The projects are designed to work together seamlessly, with a top-level configur
 ## Frontend
 
 Create a .env.local file in the /frontend directory with:
+
 NEXT_PUBLIC_ALCHEMY_API_KEY=<your_alchemy_api_key_here>
+
 NEXT_PUBLIC_API_URL=http://localhost:8000
 
 ## Backend
 
 Create a .env file in the /backend directory with:
+
 DATABASE_URL=<your_local_postgres_db_url>
+
 POLYGON_RPC_URL=<your_alchemy_polygon_rpc_url>
 
 ---
@@ -87,7 +95,10 @@ POLYGON_RPC_URL=<your_alchemy_polygon_rpc_url>
 ## Running the Projects
 
 From the root of your project, run:
-npm run dev
+
+```bash
+    npm run dev
+```
 
 > **Note:**  
 > This command uses concurrently to start both the Next.js frontend and the NestJS backend.
