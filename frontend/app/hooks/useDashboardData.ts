@@ -45,6 +45,7 @@ export const useDashboardData = (walletAddress: string | null) => {
           const txResponse = await signer.sendTransaction(txRequest);
           await txResponse.wait();
           toast.success("NFT successfully sent!");
+          nftBalancesQuery.refetch();
         } catch {
           toast.error("Something went wrong: Metamask error");
         }
