@@ -58,6 +58,10 @@ The Crypto Wallet Backend is a service built with NestJS that supports the Crypt
 
    npm install
 
+3. **Run Migrations (for fresh setup)**
+
+   npm run migration:run
+
 ## Environment Variables
 
 Create a .env file in the root directory with the following content:

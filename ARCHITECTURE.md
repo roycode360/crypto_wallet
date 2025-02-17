@@ -141,3 +141,8 @@ The project is split into two primary parts:
   Using PostgreSQL (via TypeORM) for storing challenge nonces ensures reliability and supports scaling scenarios versus an in-memory solution.
 - **Use of External APIs:**  
   Integrating with services like Alchemy provides reliable and scalable access to blockchain data (like token balances, NFT data) without building a full indexer.
+
+## 7. Deployment
+
+Frontend - Vercel
+Backend - Render (The first API request after a period of inactivity might have a slight delay as the server spins up)

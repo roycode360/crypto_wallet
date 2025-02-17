@@ -80,10 +80,10 @@ export const WalletProvider: React.FC<{ children: React.ReactNode }> = ({
         setWalletAddress(accounts[0]);
         router.push(ROUTES.DASHBOARD);
       } catch {
-        console.error("Wallet connection failed");
+        toast.error("Wallet connection failed");
       }
     } else {
-      console.error("Please install MetaMask");
+      toast.error("Please install MetaMask");
     }
     setIsLoading(false);
   };

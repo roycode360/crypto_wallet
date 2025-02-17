@@ -73,7 +73,7 @@ export const Header = (): ReactElement => {
                 isEditing ? "hidden" : "block"
               } text-white capitalize`}
             >
-              Username:
+              Username:{" "}
               {user?.username || (
                 <span className="ml-2 text-gray-500">Add Username</span>
               )}
